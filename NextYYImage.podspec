@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = 'NextYYImage'
   s.summary      = 'Image framework for iOS to display/encode/decode animated WebP, APNG, GIF, and more. YYImage based, but support Apple Silicon arm64 simulator.
 '
-  s.version      = '1.0.4'
+  s.version      = '1.0.5'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = {"pcjbird" => "pcjbird@hotmail.com"}
   s.source           = {:git => "https://github.com/pcjbird/NextYYImage.git", :tag => s.version.to_s}
