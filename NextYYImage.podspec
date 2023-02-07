@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = 'NextYYImage'
   s.summary      = 'Image framework for iOS to display/encode/decode animated WebP, APNG, GIF, and more. YYImage based, but support Apple Silicon arm64 simulator.
 '
-  s.version      = '1.0.8'
+  s.version      = '1.0.9'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = {"pcjbird" => "pcjbird@hotmail.com"}
   s.source           = {:git => "https://github.com/pcjbird/NextYYImage.git", :tag => s.version.to_s}
@@ -24,9 +24,6 @@ Pod::Spec.new do |s|
   s.subspec 'WebP' do |webp|
     webp.dependency 'NextYYImage/Core'
     webp.ios.vendored_frameworks = 'WebP/WebP.xcframework'
-    webp.xcconfig = {
-      'INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES' => '$(inherited) *.xcframework'
-    }
   end
 
   s.subspec 'libwebp' do |libwebp|
